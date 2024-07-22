@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Smart Car Dashboard</string>
+    <string name="fuel_level_label">Fuel Level: %1$s</string>
+    <string name="speed_label">Speed: %1$s km/h</string>
+    <string name="engine_status_label">Engine Status: %1$s</string>
+    <string name="navigation_label">Navigation: %1$s</string>
+    <string name="weather_label">Weather: %1$s</string>
+    <string name="media_player_label">Media Player</string>
 </resources>

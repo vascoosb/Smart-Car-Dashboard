@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- Display App title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:layout_margin="16dp" />
 
     <!-- Display Real-time Vehicle Data -->
     <TextView
         android:id="@+id/fuelLevelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuel Level: 0%"
+        android:text="@string/fuel_level_label"
         android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/speedTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fuelLevelTextView"
-        android:text="Speed: 0 km/h"
+        android:text="@string/speed_label"
         android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/engineStatusTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/speedTextView"
-        android:text="Engine Status: Off"
+        android:text="@string/engine_status_label"
         android:textSize="18sp"/>
 
     <!-- Navigation and Weather Information -->
@@ -33,16 +40,14 @@
         android:id="@+id/navigationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/engineStatusTextView"
-        android:text="Navigation: N/A"
+        android:text="@string/navigation_label"
         android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/weatherTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/navigationTextView"
-        android:text="Weather: N/A"
+        android:text="@string/weather_label"
         android:textSize="18sp"/>
 
     <!-- Media Player (Placeholder) -->
@@ -50,12 +55,11 @@
         android:id="@+id/mediaPlayerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/weatherTextView"
-        android:text="Media Player"
+        android:text="@string/media_player_label"
         android:textSize="18sp"/>
 
 
-</RelativeLayout>
+</LinearLayout>
 
 
 
