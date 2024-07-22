@@ -1,7 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-</LinearLayout>
+    <!-- Display Real-time Vehicle Data -->
+    <TextView
+        android:id="@+id/fuelLevelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Level: 0%"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fuelLevelTextView"
+        android:text="Speed: 0 km/h"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/engineStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speedTextView"
+        android:text="Engine Status: Off"
+        android:textSize="18sp"/>
+
+    <!-- Navigation and Weather Information -->
+    <TextView
+        android:id="@+id/navigationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/engineStatusTextView"
+        android:text="Navigation: N/A"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/weatherTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigationTextView"
+        android:text="Weather: N/A"
+        android:textSize="18sp"/>
+
+    <!-- Media Player (Placeholder) -->
+    <TextView
+        android:id="@+id/mediaPlayerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherTextView"
+        android:text="Media Player"
+        android:textSize="18sp"/>
+
+
+</RelativeLayout>
+
+
+
