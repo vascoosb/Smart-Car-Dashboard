@@ -5,5 +5,8 @@
     <string name="engine_status_label">Engine Status: %1$s</string>
     <string name="navigation_label">Navigation: %1$s</string>
     <string name="weather_label">Weather: %1$s</string>
-    <string name="media_player_label">Media Player</string>
+    <string name="media_player_status">Media Player Status</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
 </resources>
